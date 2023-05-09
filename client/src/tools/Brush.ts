@@ -18,7 +18,7 @@ export default class Brush extends Tool {
 
     mouseUpHandler() {
         this.mouseDown = false;
-        if (this.mouseDown) {
+        
             this.socket.send(JSON.stringify({
                 method: "draw",
                 id: this.id,
@@ -26,7 +26,7 @@ export default class Brush extends Tool {
                     type: 'finish',
                 }
             }))
-        }
+        
     }
 
     mouseDownHandler(e: any) {
