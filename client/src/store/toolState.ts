@@ -2,7 +2,6 @@ import {makeAutoObservable} from "mobx";
 
 class ToolState {
     tool: any;
-    color: any;
 
     constructor() {
         makeAutoObservable(this);
@@ -20,3 +19,5 @@ class ToolState {
         this.tool.lineWidth = width;
     }
 }
+
+export default new ToolState();
