@@ -4,8 +4,6 @@ const app = express();
 const WebSocketServer = require('express-ws')(app);
 const aWss = WebSocketServer.getWss();
 const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
 
 const PORT = process.env.PORT;
 
